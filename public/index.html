@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation NodsJS - API</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+
+    <h3>INFORMATIONS ABOUT USERS AND COMPANIES</h3>
+<!-- ########## BUTTONS SWITCH ########## -->
+    <section id="buttons_section">
+
+        <label class="toggle">
+            <input class="toggle-checkbox" type="checkbox" id="btn_toggle_1">
+            <div class="toggle-switch"></div>
+            <span class="toggle-label"></span>
+          </label>
+          <label class="toggle">
+            <input class="toggle-checkbox" type="checkbox" id="btn_toggle_2">
+            <div class="toggle-switch"></div>
+            <span class="toggle-label"></span>
+          </label>    
+          <label class="toggle">
+            <input class="toggle-checkbox" type="checkbox" id="btn_toggle_3">
+            <div class="toggle-switch"></div>
+            <span class="toggle-label"></span>
+          </label>
+    </section>
+<!-- ########## MODULES ########## -->
+<!-- ########## MODULE 1 ########## -->
+    <section id="modules_section">
+        <div class="modules" id="module_1" style="visibility:hidden">
+            <div class="module_header">
+                <h5 class="module_title">Module 1 - Images</h5>
+                <!-- <div class="cards_buttons">
+                    <buttons class="cards_buttons_item">X</buttons>
+                </div> -->
+            </div>
+            <div id="module_1_body">
+                <div class="input_bar">
+                    <div class="input_bar_child">
+                        <!--A faire changer d'API et permettre de selectionner un thème sur le retour des images -->
+                        <!-- <span id="span_label"><label for="photos">Theme :</label></span>
+                        <select name="photos" id="photos">
+                            <option value="nature">Nature</option>
+                            <option value="montagne">Montagne</option>
+                            <option value="ciel">Ciel</option>
+                            <option value="plage">Plage</option>
+                            <option value="urbain">Urbain</option>
+                            <option value="espace">Espace</option>
+                        </select> -->
+                    </div>
+                    <div class="input_bar_child">
+                        <label for="input_quantity_images" id="quantity_label">Quantity :</label>
+                        <input type="number" id="input_quantity_images" name="input_quantity_images" placeholder="Type here">
+                    </div>
+                    <input type="submit" id="submit_active" value="Submit">
+                </div>
+                <div id="link_container">
+                </div>
+                <div class="div_myImage"></div>
+            </div>
+        </div>
+<!-- ########## MODULE 2 ########## -->
+        <div class="modules" id="module_2" style="visibility:hidden">
+            <div class="module_header">
+                <h5 class="module_title">Module 2 - Users</h5>
+            </div>
+            <div id="module_2_body">
+                <fieldset class="users_card" id="card_user_1"></fieldset>
+                <fieldset class="users_card" id="card_user_2"></fieldset>
+                <fieldset class="users_card" id="card_user_3"></fieldset>
+                <fieldset class="card_infos" id="card_user_infos" style="visibility:hidden"></fieldset>
+            </div>
+        </div>
+
+<!-- ########## MODULE 3 ########## -->
+        <div class="modules" id="module_3" style="visibility:hidden">
+            <div class="module_header">
+                <h5 class="module_title">Module 3 - Companies</h5>
+            </div>
+            <div id="module_3_body">
+                <div id="prev"></div>
+                <fieldset id="field_companies"></fieldset>
+                <div id="next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>
