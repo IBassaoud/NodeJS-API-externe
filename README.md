@@ -1,7 +1,7 @@
 # NodeJS-API-externe
 Before using the program, first use the following command in the terminal :
 - npm install express socket.io
-- npm install node-fetch@2.6.7
+- npm install node-fetch@2.6.7\
 To run the server : 
 - npm run dev
 
