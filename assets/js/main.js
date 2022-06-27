@@ -28,6 +28,7 @@ BTN_toggle_2.addEventListener('click', function() {
     else
         module2.setAttribute('style', 'visibility:hidden')
         module2CardsWind.setAttribute('style', 'visibility:hidden')
+        document.getElementById('span_remove_credit').setAttribute('style', 'visibility:hidden')
 });
 
 BTN_toggle_3.addEventListener('click', function() {
@@ -204,6 +205,7 @@ function displayCreditCards(myUsers, credCards){
         })
         
     }
+    
     btnExit.addEventListener("click", function(){
         module2CardsWind.setAttribute('style', 'visibility:hidden')
         spanBtnExit.setAttribute('style', 'visibility:hidden')
