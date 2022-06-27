@@ -521,7 +521,7 @@ h3 {
     background: #287dec;
     box-shadow: -2px 7px #84c2f5;
     border-radius: 2rem;
-    padding: 20px;
+    padding: 20px 10px;
     margin-right: 2%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
